@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart'; // Correct import for GetMaterialApp
 import 'package:google_fonts/google_fonts.dart';
-
-import './layout.dart'; // Replace 'your_package_name' with the actual package name
+import 'package:loans/layout.dart';
 
 
 

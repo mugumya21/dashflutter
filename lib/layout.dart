@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:loans/helpers/responsivewidget.dart';
+import 'package:loans/widgets/largescreen.dart';
+import 'package:loans/widgets/smallscreen.dart';
 
 void main(){
   runApp( const SiteLayout());
@@ -15,18 +18,8 @@ class SiteLayout extends StatelessWidget {
       appBar: AppBar(elevation: 0,
         backgroundColor: Colors.white,
       ),
-      body: Row(
-        children: [
-          Expanded(child: Container(
-            color: Colors.red,
-          )),
-          Expanded(
-              flex: 5,
-              child: Container(
-                  color: Colors.blue
-              ))
-        ],
-      ),
+      body: ResponsiveWidget(largeScreen: LargeScreen(), smallScreen: SmallScreen(),)
     );
+      
   }
 }
